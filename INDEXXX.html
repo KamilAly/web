@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Merch Paradise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .top-bar {
+            background-color: #2E3A59;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+        }
+        header {
+            background: linear-gradient(to right, #F3E5F5, #CE93D8);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #CE93D8, #AB47BC);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .hero {
+            position: relative;
+            text-align: left;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero .overlay {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .group-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .group-buttons a {
+            display: inline-block;
+            background-color: #2E3A59;
+            color: white;
+            text-decoration: none;
+            padding: 100px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .group-buttons a:hover {
+            opacity: 0.8;
+        }
+        .group-buttons a[href$="red_velvet"] {
+            background-image: url('RedV.png');
+        }
+        .group-buttons a[href$="new_jeans"] {
+            background-image: url('NewJ.png');
+        }
+        .group-buttons a[href$="g_idle"] {
+            background-image: url('GID.png');
+        }
+        .group-buttons a[href$="twice"] {
+            background-image: url('Twic.png');
+        }
+        .group-buttons a[href$="aespaa"] {
+            background-image: url('Aesp.png');
+        }
+        .user-info {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>K Merch Paradise</h1>
+        <img src="LogoRV-TR.png" weight=100px height=100px>
+    </header>
+    <nav>
+        <div class="logo">
+            <h2>SM Town Global</h2>
+        </div>
+        <div class="sesion">
+            <!-- Simulación de usuario logueado -->
+            <div class="user-info">
+                <span>Bienvenido, Usuario</span>
+            </div>
+            <!-- Fin simulación -->
+             <a href="inicio.html">Inicio de sesion</a>
+            <a href="index.php">Regístrate</a>
+        </div>
+    </nav>
+    <div class="hero">
+          <img src="RED VELVET.jpg" weight=100px height=100px>
+        <div class="overlay">
+        </div>
+    </div>
+    <div class="content">
+        <div class="group-buttons">
+            <a href="RedVelvet.html?grupo=red_velvet">Red Velvet</a>
+            <a href="NewJeans.html?grupo=new_jeans">New Jeans</a>
+            <a href="Gidle.html?grupo=g_idle">G I-DLE</a>
+            <a href="Twice.html?grupo=twice">Twice</a>
+            <a href="Aespa.html?grupo=aespaa">Aespaa</a>
+        </div>
+    </div>
+</body>
+</html>

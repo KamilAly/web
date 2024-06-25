@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate K merch paradise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #F3E5F5, #CE93D8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.30);
+            text-align: center;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px 0;
+            color: black;
+            width: 100%;
+        }
+
+        .form-group label {
+            margin-left: 10%;
+            width: 80%;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 98%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.30);
+            color: #333;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(235, 76, 76);
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 95%;
+            margin: 20px 0;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #CE93D8;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid red;
+            width: 100%;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="registrardatos.php" method="post">
+        <h1>REGISTRESE</h1>
+        <hr>
+        <h1>DATOS PERSONALES</h1>
+        <div class="form-group">
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label for="app">Usuario:</label>
+            <input type="text" id="app" name="app">
+        </div>
+        <div class="form-group">
+            <label for="apm">Correo:</label>
+            <input type="email" id="apm" name="apm">
+        </div>
+        <div class="form-group">
+            <label for="telefono">Telefono:</label>
+            <input type="number" id="telefono" name="telefono">
+        </div>
+        <div class="form-group">
+            <label for="contrasena">Crear contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena">
+        </div>
+        <div class="form-group">
+            <label for="confirmar-contrasena">Confirmar contraseña:</label>
+            <input type="password" id="confirmar-contrasena" name="confirmar-contrasena">
+        </div>
+        <hr>
+        <h1>DIRECCION</h1>
+        <div class="form-group">
+            <label for="estados">Estado:</label>
+            <select id="estados" name="estados">
+                <option value="0"></option>
+                <option value="1">Aguascalientes</option>
+                <option value="2">Baja California</option>
+                <option value="3">Baja California Sur</option>
+                <option value="4">Campeche</option>
+                <option value="5">Chiapas</option>
+                <option value="6">Chihuahua</option>
+                <option value="7">Ciudad de México</option>
+                <option value="8">Coahuila</option>
+                <option value="9">Colima</option>
+                <option value="10">Durango</option>
+                <option value="11">Estado de México</option>
+                <option value="12">Guanajuato</option>
+                <option value="13">Guerrero</option>
+                <option value="14">Hidalgo</option>
+                <option value="15">Jalisco</option>
+                <option value="16">Michoacán</option>
+                <option value="17">Morelos</option>
+                <option value="18">Nayarit</option>
+                <option value="19">Nuevo León</option>
+                <option value="20">Oaxaca</option>
+                <option value="21">Puebla</option>
+                <option value="22">Querétaro</option>
+                <option value="23">Quintana Roo</option>
+                <option value="24">San Luis Potosí</option>
+                <option value="25">Sinaloa</option>
+                <option value="26">Sonora</option>
+                <option value="27">Tabasco</option>
+                <option value="28">Tamaulipas</option>
+                <option value="29">Tlaxcala</option>
+                <option value="30">Veracruz</option>
+                <option value="31">Yucatán</option>
+                <option value="32">Zacatecas</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="mcp">Municipio:</label>
+            <input type="text" id="mcp" name="mcp">
+        </div>
+        <div class="form-group">
+            <label for="col">Colonia:</label>
+            <input type="text" id="col" name="col">
+        </div>
+        <div class="form-group">
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle">
+        </div>
+        <div class="form-group">
+            <label for="nue">Num ext:</label>
+            <input type="text" id="nue" name="nue">
+        </div>
+        <div class="form-group">
+            <label for="nui">Num int:</label>
+            <input type="text" id="nui" name="nui">
+        </div>
+        <input type="submit" value="REGISTRARSE">
+    </form>
+</body>
+</html>
